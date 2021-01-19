@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+/* General Styles */
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  font-weight: 400;
+}
+
+/* Profile Card */
+
+.container {
+  background-image: url(../images/bg-pattern-top.svg),
+    url(../images/bg-pattern-bottom.svg);
+  background-position: left -700px top -600px, right -700px bottom -550px;
+  background-repeat: no-repeat;
+  background-color: hsl(185, 75%, 39%);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .profile-card {
+    width: 90%;
+    max-width: 100%;
+    background-color: white;
+    margin-bottom: 20px;
+    border-radius: 20px;
+
+    .profile-content {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 16px;
+      color: hsl(0, 0%, 59%);
+
+      .profile-image {
+        width: 100%;
+        padding-top: 50px;
+        background-image: url(../images/bg-pattern-card.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+
+        img {
+          display: block;
+          margin: 0 auto -50px auto;
+          border: 5px solid white;
+          border-radius: 50%;
+        }
+      }
+      .profile-info {
+        width: 100%;
+        margin-top: 50px;
+        text-align: center;
+        border-bottom: 1px solid lightgray;
+        .username {
+          font-size: 18px;
+          span {
+            color: hsl(229, 23%, 23%);
+            font-weight: 700;
+          }
+        }
+      }
+    }
+    .profile-stadistics {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+
+      p {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        text-align: center;
+        span {
+          font-size: 18px;
+          color: hsl(229, 23%, 23%);
+          font-weight: 700;
+        }
+      }
+    }
+  }
+  @media only screen and (min-width: 800px) {
+    .profile-card {
+      width: 30%;
+    }
+  }
+}
+@media only screen and (min-width: 800px) {
+  .container {
+    background-position: left -300px top -600px, right -300px bottom -600px;
+  }
+}
