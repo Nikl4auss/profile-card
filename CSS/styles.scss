@@ -28,8 +28,8 @@ body {
 .container {
   background-image: url(../images/bg-pattern-top.svg),
     url(../images/bg-pattern-bottom.svg);
-  background-position: left calc(40vw + 15%) top calc(72vh - 10vw),
-    right calc(47vw + 15%) bottom calc(65vh - 15vw);
+  background-position: right 50vw bottom calc(50vh + 25%),
+    left 50vw top calc(50vh + 25%);
   background-repeat: no-repeat;
   background-color: hsl(185, 75%, 39%);
   height: 100%;
@@ -42,13 +42,13 @@ body {
   .profile-card {
     width: 350px;
     max-width: 80%;
-    height: 60%;
     background-color: white;
     margin-bottom: 20px;
     border-radius: 20px;
 
     .profile-content {
       width: 100%;
+      height: 100%;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -89,6 +89,7 @@ body {
     .profile-stadistics {
       width: 100%;
       display: flex;
+      flex-direction: column;
       align-items: center;
       justify-content: space-around;
 
@@ -105,15 +106,12 @@ body {
         }
       }
     }
+    @media only screen and (min-width: 600px) {
+      .profile-stadistics {
+        flex-direction: row;
+        align-items: flex-end;
+        margin-top: 2rem;
+      }
+    }
   }
-  // @media only screen and (min-width: 800px) {
-  //   .profile-card {
-  //     width: 30%;
-  //   }
-  // }
 }
-// @media only screen and (min-width: 800px) {
-//   .container {
-//     background-position: left -300px top -600px, right -300px bottom -600px;
-//   }
-// }
