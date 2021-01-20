@@ -27,7 +27,7 @@ body {
 /* Profile Card */
 .container {
   background-image: url(../images/bg-pattern-top.svg), url(../images/bg-pattern-bottom.svg);
-  background-position: left -700px top -600px, right -700px bottom -550px;
+  background-position: left calc(40vw + 15%) top calc(72vh - 10vw), right calc(47vw + 15%) bottom calc(65vh - 15vw);
   background-repeat: no-repeat;
   background-color: #19a2ae;
   height: 100%;
@@ -38,8 +38,9 @@ body {
   align-items: center;
 }
 .container .profile-card {
-  width: 90%;
-  max-width: 100%;
+  width: 350px;
+  max-width: 80%;
+  height: 60%;
   background-color: white;
   margin-bottom: 20px;
   border-radius: 20px;
@@ -98,17 +99,6 @@ body {
   font-size: 18px;
   color: #2d3248;
   font-weight: 700;
-}
-@media only screen and (min-width: 800px) {
-  .container .profile-card {
-    width: 30%;
-  }
-}
-
-@media only screen and (min-width: 800px) {
-  .container {
-    background-position: left -300px top -600px, right -300px bottom -600px;
-  }
 }
 
 /*# sourceMappingURL=styles.css.map */

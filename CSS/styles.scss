@@ -28,7 +28,8 @@ body {
 .container {
   background-image: url(../images/bg-pattern-top.svg),
     url(../images/bg-pattern-bottom.svg);
-  background-position: left -700px top -600px, right -700px bottom -550px;
+  background-position: left calc(40vw + 15%) top calc(72vh - 10vw),
+    right calc(47vw + 15%) bottom calc(65vh - 15vw);
   background-repeat: no-repeat;
   background-color: hsl(185, 75%, 39%);
   height: 100%;
@@ -39,8 +40,9 @@ body {
   align-items: center;
 
   .profile-card {
-    width: 90%;
-    max-width: 100%;
+    width: 350px;
+    max-width: 80%;
+    height: 60%;
     background-color: white;
     margin-bottom: 20px;
     border-radius: 20px;
@@ -104,14 +106,14 @@ body {
       }
     }
   }
-  @media only screen and (min-width: 800px) {
-    .profile-card {
-      width: 30%;
-    }
-  }
+  // @media only screen and (min-width: 800px) {
+  //   .profile-card {
+  //     width: 30%;
+  //   }
+  // }
 }
-@media only screen and (min-width: 800px) {
-  .container {
-    background-position: left -300px top -600px, right -300px bottom -600px;
-  }
-}
+// @media only screen and (min-width: 800px) {
+//   .container {
+//     background-position: left -300px top -600px, right -300px bottom -600px;
+//   }
+// }
